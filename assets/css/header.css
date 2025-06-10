@@ -77,6 +77,10 @@ header::after {
   background-image: url("../images/icons/wired-outline-1676-telephone-call-hand-hover-pinch\ \(1\).gif");
 }
 
+.contact-info p.linkedin::before {
+  background-image: url("../images/icons/linkedin.svg");
+}
+
 @media only screen and (min-width: 768px) {
   .header {
     display: grid;
