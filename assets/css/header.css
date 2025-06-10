@@ -1,0 +1,100 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+  background-image: url("../images/icons/header.svg");
+}
+
+.header .photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.header .title {
+  text-align: center;
+  font-family: neue-machina;
+}
+
+.contact-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-info p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.contact-info p::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+.contact-info p.job::before {
+  background-image: url("../images/icons/wired-outline-268-avatar-man-hover-glance\ \(1\).gif");
+}
+
+.contact-info p.loc::before {
+  background-image: url("../images/icons/wired-outline-18-location-pin-hover-jump\ \(1\).gif");
+}
+
+.contact-info p.e-mail::before {
+  background-image: url("../images/icons/wired-outline-27-globe-hover-rotate\ \(1\).gif");
+}
+
+.contact-info p.contact::before {
+  background-image: url("../images/icons/wired-outline-1676-telephone-call-hand-hover-pinch\ \(1\).gif");
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-areas:
+      "photo title"
+      "photo info";
+  }
+
+  .header .photo {
+    grid-area: photo;
+  }
+
+  .header .title {
+    grid-area: title;
+    width: 200px;
+  }
+
+  .header .contact-info {
+    grid-area: info;
+  }
+}
