@@ -3,7 +3,7 @@
 📜 Descrição
 Este repositório contém o código-fonte do meu currículo online, uma página web interativa e responsiva criada para apresentar minha trajetória profissional, minhas habilidades e meus projetos. O objetivo é oferecer uma visão dinâmica e moderna do meu perfil para recrutadores e para a comunidade de tecnologia.
 
-Acesse a versão ao vivo aqui: [Link para o seu site]
+Acesse a versão ao vivo aqui: (https://joaomarcosbn.github.io/curriculum-dio/)
 
 ✨ Funcionalidades
 Design Responsivo: A página se adapta perfeitamente a diferentes tamanhos de tela, de desktops a dispositivos móveis.
