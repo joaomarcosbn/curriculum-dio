@@ -81,6 +81,10 @@ header::after {
   background-image: url("../images/icons/linkedin.svg");
 }
 
+.contact-info p.githubTopo::before {
+  background-image: url("../images/icons/github2.svg");
+}
+
 @media only screen and (min-width: 768px) {
   .header {
     display: grid;
